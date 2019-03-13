@@ -58,3 +58,189 @@ namespace Examen_Parcial_1
         }
     }
 }
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Examen_Parcial_1
+{
+     class Figura
+    {
+        public  string NombreFigura { get; set; }
+
+    }
+}
+
+
+
+namespace Examen_Parcial_1
+{
+    class Triangulo:Figura
+    {
+        private double _Basetri;
+        private double _Alturatri;
+        private double _Areatri;
+
+        public void calcularAreatri(double pbase,double paltura)
+        {
+
+            Basetri = pbase;
+            Alturatri = paltura;
+            double result = Basetri * Alturatri/2;
+            Console.WriteLine("El Area del Triangulo es:"+result);
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+        }
+
+
+        public double Basetri
+        {
+            get { return _Basetri;}
+
+            set{ _Basetri = value; }
+        }
+
+        public double Alturatri
+        {
+            get
+            {
+                return _Alturatri;
+            }
+
+            set
+            {
+                _Alturatri = value;
+            }
+        }
+
+        public double Areatri
+        {
+            get
+            {
+                return _Areatri;
+            }
+
+            set
+            {
+                _Areatri = value;
+            }
+        }
+    }
+    }
+
+namespace Examen_Parcial_1
+{
+    class Rectangulo:Figura
+    {
+        private double _Baserec;
+        private double _Alturarec;
+        private double _Arearec;
+
+
+        public void calcularAreaRec(double pAltura, double pBase, double pArea)
+        {
+            Baserec = pBase;
+            Alturarec = pAltura;
+            Arearec = pArea;
+            double resultado = pAltura * pBase;
+            Console.WriteLine(  "El resultado del Area del Rectangulo es: "+resultado);
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+
+        public double Baserec
+        {
+            get
+            {
+                return _Baserec;
+            }
+
+            set
+            {
+                _Baserec = value;
+            }
+        }
+
+        public double Alturarec
+        {
+            get
+            {
+                return _Alturarec;
+            }
+
+            set
+            {
+                _Alturarec = value;
+            }
+        }
+
+        public double Arearec
+        {
+            get
+            {
+                return _Arearec;
+            }
+
+            set
+            {
+                _Arearec = value;
+            }
+        }
+    }
+    }
+    
+    
+    namespace Examen_Parcial_1
+{
+    class Circulo:Figura
+    {
+        private  double _RadioCir;
+        private double _AreaCir;
+        
+        public void calcularAreaCir(double pRadio)
+
+        {
+
+            RadioCir = pRadio;
+            
+            double result = RadioCir * RadioCir;
+            Console.WriteLine("El Area del circuilo es:" + result);
+
+
+        }
+
+        public double RadioCir
+        {
+            get
+            {
+                return _RadioCir;
+            }
+
+            set
+            {
+                _RadioCir = value;
+            }
+        }
+
+        public double AreaCir
+        {
+            get
+            {
+                return _AreaCir;
+            }
+
+            set
+            {
+                _AreaCir = value;
+            }
+        }
+    }
+}
+
